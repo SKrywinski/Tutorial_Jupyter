@@ -1,14 +1,27 @@
-pre: why Python?
+pre:
+* Git(Hub)
+* why Python?
 
-From zero to Jupyter
+Übersicht
+=========
+
+## Inhalt
+* [Installation](#install)
+* [Windows](#windows)
+* [Linux](#linux)
+
+## From zero to Jupyter
 
 + what is Jupyter [^1]
 + why Jupyter
 
-Installation
+## Installation {install}
+### Windows {windows}
 Windows vs. Linux
 + Anaconda
 + Path
+
+### Linux {linux}
 
 first glance: [Colab](https://colab.research.google.com/)
 
