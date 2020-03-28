@@ -6,12 +6,15 @@ Vor allem zur schnellen Ausführung von Code und zur Entwicklung bietet es sich 
 
 
 ## From zero to Jupyter
-Auf [Google Colab](https://colab.research.google.com/) kann man - sofern ein Google-Konto vorhanden ist, Jupyter-Notebooks ausprobieren, ohne etwas installieren zu müssen. Jedoch: (Später vielleicht) Sensible Daten werden so aus der Hand gegeben; dies gilt es im Hinterkopf zu haben.
 
 + what is Jupyter [^2]
+
 + why Jupyter
 
+Auf [Google Colab](https://colab.research.google.com/) kann man - sofern ein Google-Konto vorhanden ist, Jupyter-Notebooks ausprobieren, ohne etwas installieren zu müssen. Jedoch: (Später vielleicht) Sensible Daten werden so aus der Hand gegeben; dies gilt es im Hinterkopf zu behalten.
+
 ## Installation {install}
++ **Hinsweis, erst alles andere python zu deinstallieren**
 + Anaconda
    + Spyder
 
