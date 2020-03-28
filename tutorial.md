@@ -16,16 +16,39 @@ Vor allem zur schnellen Ausführung von Code und zur Entwicklung bietet es sich 
 Auf [Google Colab](https://colab.research.google.com/) kann man - sofern ein Google-Konto vorhanden ist, Jupyter-Notebooks ausprobieren, ohne etwas installieren zu müssen. Jedoch: (Später vielleicht) Sensible Daten werden so aus der Hand gegeben; dies gilt es im Hinterkopf zu behalten.
 
 ## Installation {install}
-+ Die Installation unter Linux und macOS sollte relativ ähnlich sein
-+ **Erst alles andere python zu deinstallieren**
-+ Anaconda
+### Anaconda
+Zur Installation von Jupyter empfiehlt sich, dies zusammen mit der Anaconda-Distribution zu tun. Jupyter über `pip` zu installieren ist eher fortgeschrittenen Benutzern zu empfehlen[^note4].
+[^note4]: https://jupyter.readthedocs.io/en/latest/install.html
+
   + Was ist Anaconda
-  + Warum Anaconda/so ein Riesenpacket?
+
+  Anaconda ist sozusagen ein Softwarepaket, dass sich nicht nur um die richtige Installation von Python (und R) kümmert, sondern auch dafür sorgt, dass Abhängigkeiten von (Python-)Paketen richtig aufgelöst werden.
+  Das verhindert nicht nur Fehler durch Inkompabilität sondern möglicherweise auch durch Änderungen in den Paketen selbst, die sich mitunter auf Ausgeben von selbstentwickelten Programmen auswirken.
+  Dabei und dafür bringt Anaconda die Entwicklungsumgebung Spyder mit und beinhaltet eine umfangreiche Paketsammlung[^note5] für Python, sodass zunächst mit keiner anderen Paketverwaltung gearbeitet werden muss.
+  So erklärt sich die Downloadgröße von Anaconda.
+  Vom Anaconda Navigator, der "Benutzeroberfläche" von Anaconda aus sind alle Tools wie Jupyter, Spyder, Paketverwaltung aber auch Installation und Update von Paketen erreichbar; so können viele Aufgaben von einem Ort und zunächst ohne Kommandozeile erledigt werden.
+  + Warum Anaconda/so ein Riesenpaket?
   + Spyder
 + Python 3! = Anaconda 3(?)
 
+Bei der Auswahl der richtigen Anaconda-Distribution kommt es auf folgende Punkte an:
++ welches Betriebssystem: Windows - Linux - macOS
++ 32bit - 64bit: zu finden in den Systeminformationen, neuere Geräte sind vermutlich mit 64bit-Software ausgestattet
+Für Linux und macOS nur 64bit
++ Python-Version 3 (Python 2 wird in Zukunft nicht mehr weiterentwickelt)
+
+[Anaconda-Download-Seite](https://www.anaconda.com/distribution/#download-section)
+[^note5]: Häufig verwendete Pakete wie numpy, pandas, matplotlib, SciPy und viele weiter sind bereits enthalten
+
++ Die Installation unter Linux und macOS sollte relativ ähnlich sein
+
+Weil die Installation von Anaconda auf Linux und macOS sehr ähnlich sein sollten, wird bei den folgenden Hinweisen nur auf Windows und Linux eingegangen.
+Ein wichtiger Hinweis, der in beiden Fällen gilt: Soll Anaconda installiert werden, so ist es sehr wichtig bestehende Pythoninstallationen (auch IDLE oder Ähnliches) restlos vom System zu entfernen. Dies betrifft auch schon eingerichtete Umgebungsvariablen. Sollte Anaconda parallel installiert werden kann (und wird) es zu Vermischungen und Fehlern kommen, die nur sehr aufwändig behoben werden können.
+
 ### Windows {windows}
-+ **Erst alles andere python zu deinstallieren**
++ **Erst alle anderen Python-Installationen deinstallieren und vorhandene PATH- und Umgebungsvariablen zu entfernen**
+→ wie Entfernt man die am Besten?
+
 + Pfade ohne Leerzeichen! → Fehlerquelle
   + `"C:\Users\My Name"`
   + `"C:\Users\My\ Name"`?`"C:\\Users\\My\ Name"`
@@ -49,15 +72,12 @@ Windows vs. Linux
 
 
 Danach:
-* conda
-* pip - pip user...
-* pyenv
-* pipenv
++ conda
++ pip - pip user...
++ pyenv
++ pipenv
 
+# Links:
++ [Better Medium Installation Guide](https://medium.com/@neuralnets/beginners-quick-guide-for-handling-issues-launching-jupyter-notebook-for-python-using-anaconda-8be3d57a209b)
 
-___
-# References
-
-further reading:
-(a few links)
-[Better Medium Installation Guide](https://medium.com/@neuralnets/beginners-quick-guide-for-handling-issues-launching-jupyter-notebook-for-python-using-anaconda-8be3d57a209b)
++ [Einrichten von Anaconda (TU Harburg)](https://fizban05.rz.tu-harburg.de/itbh-inf-wise201718/veranstaltungsskript-inf-wise201718/material/sitzungsmaterial/einrichtung-byod-python.html)
