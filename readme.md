@@ -13,4 +13,8 @@ lang: de-DE
 
 @import "preface.md"
 
+@import "whyGithub.md"
+
+@import "commandline.md"
+
 @import "tutorial.md"
