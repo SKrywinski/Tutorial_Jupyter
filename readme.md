@@ -42,9 +42,7 @@ Es ist notwendig, zu verstehen, wie Pfadangaben zum Beispiel mit graphischen Dat
   
   
   
-<img src="img/WindowsExplorer.png?0.5254201339615676"  width="600px"  alt="Windows Explorer" >
-  
-![Windows Explorer](./img/WindowsExplorer.png?raw=true )
+<img src="img/WindowsExplorer.png?0.559176910834323"  width="600px"  alt="Windows Explorer" >
   
   
   
@@ -75,14 +73,18 @@ Linux:
   
   
 Als kleines Beispiel dient hier der Dateiablageort "Desktop".
-Dieser befindet sich in `C:\Users\%USER%\Desktop` in Windows und `/home/<username>/Desktop` ^[Je nach Linuxdistribution kann der Ort auch anders, z. B. `Schreibtisch` heißen].
+Dieser befindet sich in `C:\Users\%USER%\Desktop` in Windows und `/home/<username>/Desktop` [^noteF1].
+  
+[^noteF1]:Je nach Linuxdistribution kann der Ort auch anders, z. B. `Schreibtisch` heißen
   
 Dabei fällt auf, dass sich in den Pfadangaben von Windows `\` und Linux `/` unterscheiden. Dies führt gerne zu Problemen.
   
 ####  Verzeichnis/Ordner wechseln
   
   
-Möchte man in den übergeordneten Ordner `C:\Users\%USER%\` oder `/home/<username>/` wechseln, gibt man `cd ..`^[change directory] ein. Durch `cd Dokumente` wechselt man vom übergeordneten Ordner eine Ebene tiefer nach Dokumente. Es ist sehr wichtig, sich das klarzumachen.
+Möchte man in den übergeordneten Ordner `C:\Users\%USER%\` oder `/home/<username>/` wechseln, gibt man `cd ..`[^noteF2] ein. Durch `cd Dokumente` wechselt man vom übergeordneten Ordner eine Ebene tiefer nach Dokumente. Es ist sehr wichtig, sich das klarzumachen.
+  
+[^noteF2]: =change directory
   
 ####  Absolute und relative Pfadangaben
   
@@ -92,6 +94,19 @@ Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt e
 + `cd..`, vom relativen Pfad aus eine Ebene höher zu steigen und dann `cd Bilder`, um eine Ebene tiefer, in den gewünschten Ort zu wechseln
 + `cd C:\Users\%USER%\Bilder` oder `cd /home/<username>/Bilder`, um, egal, wo man sich befindet, direkt in den absoluten Ordner zu wechseln.
   
+  
+####  Noch einige Hinweise zur Fehlervermeidung/-suche:
+  
++ Pfade ohne Leerzeichen erstellen! → Fehlerquelle
+  + Nicht so: `"C:\Users\My Name"`
+  Leerzeichen in Windows müssen in Skripten (vor allem bei Betriebssystemübergreifenden Arbeiten) mit backslash escaped werden, da es sonst Fehler gibt:
+  `"C:\Users\My\ Name"`
+  In Zusammenhang mit Windows kann das zu folgenden Konstruktionen fürhen, in denen die Pfadbackslashes nochmal escaped werden müssen:
+  `"C:\\Users\\My\ Name"`
+  + Besser: `"C:\Users\My_Name"` oder `C:\Users\MyName`
+  
+  
++ (Installations)Pfad(e) merken (für alle OS) erleichtert spätere Installationen/Problemlösungen
   
   
   
@@ -114,7 +129,7 @@ Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt e
   
 ###  Kommandozeile / Terminal
   
-<img src="img/Open_CMD.jpg?0.6382394007674557"  width="600px"  alt="Kommandozeile" >
+<img src="img/Open_CMD.jpg?0.8187158083595039"  width="600px"  alt="Kommandozeile" >
   
 Die Kommandozeile ist eine der ersten Möglichkeiten, mit einem Programm (oder dem Betriebssystem) zu interagieren[^noteC1]. Zwar wirkt der Umgang mit der Kommandozeile oft kompliziert, da dieser im Folgenden aber unumgänglich ist, hier einige kurze einleitende Worte. Man wird schnell merken, das jede Angst der Benutzung unbegründet ist und die Nutzung der Kommandozeile für alltägliche Arbeiten oft der effizienteste Weg.
 Die Kommandozeile gibt es auf jedem Betriebssystem und sie funktioniert auch überall ziemlich ähnlich.
@@ -188,6 +203,7 @@ Auf [Google Colab](https://colab.research.google.com/ ) kann man - sofern ein Go
 ####  Anaconda
   
 Zur Installation von Jupyter empfiehlt sich, dies zusammen mit der Anaconda-Distribution zu tun. Jupyter über `pip` zu installieren ist eher fortgeschrittenen Benutzern zu empfehlen[^note4].
+  
 [^note4]: https://jupyter.readthedocs.io/en/latest/install.html
   
   + Was ist Anaconda
@@ -197,6 +213,7 @@ Zur Installation von Jupyter empfiehlt sich, dies zusammen mit der Anaconda-Dist
   Dabei und dafür bringt Anaconda die Entwicklungsumgebung Spyder mit und beinhaltet eine umfangreiche Paketsammlung[^note5] für Python, sodass zunächst mit keiner anderen Paketverwaltung gearbeitet werden muss.
   So erklärt sich die Downloadgröße von Anaconda.
   Vom Anaconda Navigator, der "Benutzeroberfläche" von Anaconda aus sind alle Tools wie Jupyter, Spyder, Paketverwaltung aber auch Installation und Update von Paketen erreichbar; so können viele Aufgaben von einem Ort und zunächst ohne [Kommandozeile](commandline.md ) erledigt werden.
+  
   <!--
   + Warum Anaconda/so ein Riesenpaket?
   + Spyder
@@ -209,6 +226,7 @@ Für Linux und macOS nur 64bit
 + Python-Version 3 (Python 2 wird in Zukunft nicht mehr weiterentwickelt)
   
 [Anaconda-Download-Seite](https://www.anaconda.com/distribution/#download-section )
+  
 [^note5]: Häufig verwendete Pakete wie numpy, pandas, matplotlib, SciPy und viele weiter sind bereits enthalten
   
 + Die Installation unter Linux und macOS sollte relativ ähnlich sein
@@ -224,12 +242,7 @@ Ein wichtiger Hinweis, der in beiden Fällen gilt: Soll Anaconda installiert wer
   
   
   
-+ Pfade ohne Leerzeichen! → Fehlerquelle
-  + `"C:\Users\My Name"`
-  + `"C:\Users\My\ Name"`?`"C:\\Users\\My\ Name"`
-  + Besser: `"C:\Users\My_Name"` oder `C:\Users\MyName`
-  + Achtung: Windows `"C:\Users"` vs. Unix: `"/home/users"` → Rückstrich vs. Schrägstrich
-+ Pfad(e) merken (für alle OS) → für spätere Installationen/Problemlösungen
+  
 + Für alle Nutzer/All Users
   
 Windows vs. Linux
