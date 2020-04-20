@@ -42,7 +42,7 @@ Es ist notwendig, zu verstehen, wie Pfadangaben zum Beispiel mit graphischen Dat
   
   
   
-<img src="img/WindowsExplorer.png?0.817775533562983"  width="600px"  alt="Windows Explorer" >
+<img src="img/WindowsExplorer.png?0.5254201339615676"  width="600px"  alt="Windows Explorer" >
   
 ![Windows Explorer](./img/WindowsExplorer.png?raw=true )
   
@@ -114,7 +114,7 @@ Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt e
   
 ###  Kommandozeile / Terminal
   
-<img src="img/Open_CMD.jpg?0.8457515425600446"  width="600px"  alt="Kommandozeile" >
+<img src="img/Open_CMD.jpg?0.6382394007674557"  width="600px"  alt="Kommandozeile" >
   
 Die Kommandozeile ist eine der ersten Möglichkeiten, mit einem Programm (oder dem Betriebssystem) zu interagieren[^noteC1]. Zwar wirkt der Umgang mit der Kommandozeile oft kompliziert, da dieser im Folgenden aber unumgänglich ist, hier einige kurze einleitende Worte. Man wird schnell merken, das jede Angst der Benutzung unbegründet ist und die Nutzung der Kommandozeile für alltägliche Arbeiten oft der effizienteste Weg.
 Die Kommandozeile gibt es auf jedem Betriebssystem und sie funktioniert auch überall ziemlich ähnlich.
