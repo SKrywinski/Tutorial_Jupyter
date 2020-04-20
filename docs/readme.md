@@ -4,27 +4,48 @@
 Vorbemerkungen
 -------
   
+Dieses Tutorial versteht sich als unterstützende Hilfestellung bei der Installation von Jupyter. Es umreißt die notwendigen Vorkehrungen und versucht, die Prozesse nachvollziehbar zu erklären, dass der Einstieg in Jupyter problemlos gelingt.
+Da sich das Tutorial an Anwender - auch ganz ohne Vorkenntnisse -  richtet, ist es nicht sein Ziel, alles en detail zu beleuchten. Für weiterführende Lekture werden, wo sinnvoll, Empfehlungen gegeben. Auch können trotz sorgfältiger Vorbereitung wahrscheinlich nicht alle denkbaren (Fehler)Fälle abgedeckt werden, in denen sich Anwender Unterstützung wünschen - eingesetzte Hard- und Software und  Vorwissen sind einfach zu vielfältig.
+Das Tutorial nährt sich aus Erfahrungen häufiger Probleme vorangegangener Semester und versteht sich auch als weiter im Aufbau befindlich.
+  
+  
+  
 ###  Python
   
   
   
   
+Ju*py*ter weißt bereits darauf hin, dass mit Python (genauer gesagt in der 3. Version) gearbeitet wird.
+Python gilt als leicht erlernbare Programmiersprache, deren bereits großer Funktionsumfang mit Hilfe von Bibliotheken enorm erweitert werden kann, sodass Python sich nicht nur wachsender Beliebtheit erfreut, sondern auch in allen Bereichen von Data Science und Machine Learning eingesetzt wird.
+Auch wenn Python leicht zu erlernen ist, lernt man programmieren am Besten durch programmieren. Deswegen anbei ein paar hilfreiche Links, die beim (Python) Programmierenlernen helfen.
+  
+Tutorials
++ [W3Schools Python Tutorial](https://www.w3schools.com/python/default.asp )
++ [Python-Kurs.eu](https://www.python-kurs.eu/kurs.php )
++ [Realpython](https://realpython.com/ )
+  
+Live Python-Code ausprobieren und erklären lassen:
++ [Pythontutor](http://pythontutor.com/ )
+  
+Einfache Alltagsprobleme mit Python automatisch lösen:
++ [Automatetheboringstuff](https://automatetheboringstuff.com/ )
   
   
   
 ###  Ordnerstruktur verstehen
   
-+ Wie ist sie aufgebaut?
-+ relativ vs. absolut
-+ `\` (Windows) vs `/` (Linux)
-+ `.` und `..`
+  
+  
   
 Um nachzuvollziehen, was während der Installation von Jupyter und generell bei der Arbeit in der Kommandozeile passiert, hier ein kurzer Überblick der Strukturierung im Dateisystem.
 Es ist notwendig, zu verstehen, wie Pfadangaben zum Beispiel mit graphischen Dateimanagern zusammenhängen.
   
   
   
-<img src="img/Windows-Explorer.png?0.9146205239343217"  width="600px"  alt="Windows Explorer" >
+<img src="img/Windows-Explorer.png?0.5116763107787441"  width="600px"  alt="Windows Explorer" >
+  
+  
+  
   
   
   
@@ -68,7 +89,9 @@ Möchte man in den übergeordneten Ordner `C:\Users\%USER%\` oder `/home/<userna
   
   
 Um zwischen verschiedenen Orten zu navigieren kann man relative Pfadangaben (vom Ort aus, *an dem man sich befindet*) oder absolute Pfadangaben verwenden.
-  
+Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt es zwei Wege, um in den Ordner `Bilder` zu wechseln:
++ `cd..`, vom relativen Pfad aus eine Ebene höher zu steigen und dann `cd Bilder`, um eine Ebene tiefer, in den gewünschten Ort zu wechseln
++ `cd C:\Users\%USER%\Bilder` oder `cd /home/<username>/Bilder`, um, egal, wo man sich befindet, direkt in den absoluten Ordner zu wechseln.
   
   
   
@@ -92,7 +115,7 @@ Um zwischen verschiedenen Orten zu navigieren kann man relative Pfadangaben (vom
   
 ###  Kommandozeile / Terminal
   
-<img src="img/Open_CMD.jpg?0.7231006654810812"  width="600px"  alt="Kommandozeile" >
+<img src="img/Open_CMD.jpg?0.5318762809857345"  width="600px"  alt="Kommandozeile" >
   
 Die Kommandozeile ist eine der ersten Möglichkeiten, mit einem Programm (oder dem Betriebssystem) zu interagieren[^noteC1]. Zwar wirkt der Umgang mit der Kommandozeile oft kompliziert, da dieser im Folgenden aber unumgänglich ist, hier einige kurze einleitende Worte. Man wird schnell merken, das jede Angst der Benutzung unbegründet ist und die Nutzung der Kommandozeile für alltägliche Arbeiten oft der effizienteste Weg.
 Die Kommandozeile gibt es auf jedem Betriebssystem und sie funktioniert auch überall ziemlich ähnlich.
@@ -197,6 +220,8 @@ Ein wichtiger Hinweis, der in beiden Fällen gilt: Soll Anaconda installiert wer
 ####  Windows
   
 + **Erst alle anderen Python-Installationen deinstallieren und vorhandene PATH- und Umgebungsvariablen zu entfernen**
+  
+  
   
   
   
