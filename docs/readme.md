@@ -42,7 +42,7 @@ Es ist notwendig, zu verstehen, wie Pfadangaben zum Beispiel mit graphischen Dat
   
   
   
-<img src="img/Windows-Explorer.png?0.5116763107787441"  width="600px"  alt="Windows Explorer" >
+<img src="img/Windows-Explorer.png?0.4865371925768427"  width="600px"  alt="Windows Explorer" >
   
   
   
@@ -115,7 +115,7 @@ Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt e
   
 ###  Kommandozeile / Terminal
   
-<img src="img/Open_CMD.jpg?0.5318762809857345"  width="600px"  alt="Kommandozeile" >
+<img src="img/Open_CMD.jpg?0.3291909906953392"  width="600px"  alt="Kommandozeile" >
   
 Die Kommandozeile ist eine der ersten Möglichkeiten, mit einem Programm (oder dem Betriebssystem) zu interagieren[^noteC1]. Zwar wirkt der Umgang mit der Kommandozeile oft kompliziert, da dieser im Folgenden aber unumgänglich ist, hier einige kurze einleitende Worte. Man wird schnell merken, das jede Angst der Benutzung unbegründet ist und die Nutzung der Kommandozeile für alltägliche Arbeiten oft der effizienteste Weg.
 Die Kommandozeile gibt es auf jedem Betriebssystem und sie funktioniert auch überall ziemlich ähnlich.
@@ -148,17 +148,17 @@ Einige der am häufigsten gebrauchten Befehle sind in der Tabelle unten zu finde
   
   
   
-|    CMD Command    | UNIX Command |   PowerShell Command  | PowerShell Alias |                  Erklärung                 |
-|-------------------|--------------|-----------------------|------------------|--------------------------------------------|
-| dir               | ls           | Get-ChildItem         | gci              | Ordnerinhalt anzeigen (`directory`, `list`)|
-| cls               | clear        | Clear-Host (function) | cls              | Konsole leeren                             |
-| del, erase, rmdir | rm           | Remove-Item           | ri               | Lösche-Befehl (`delete`, `remove`)         |
-| copy              | cp           | Copy-Item             | ci               | Kopieren                                   |
-| move              | mv           | Move-Item             | mi               | Verschieben (`move`)                       |
-| rename            | mv           | Rename-Item           | rni              | Umbenennen (unter Linux wird Umbenannt durch Verschieben)|
-| type              | cat          | Get-Content           | gc               | Inhalt von (einer) Datei(en) anzeigen (`concatenate`)|
-| cd                | cd           | Set-Location          | sl               | Ort (Ordner) wechseln (`change directory`)[^noteC4]  |
-| md                | mkdir        | New-Item              | ni               | Ordner anlegen (`make directory`)[^noteC5]|
+|    CMD Command          | UNIX Command   |   PowerShell Command  | PowerShell Alias |                  Erklärung                               |
+|-------------------------|----------------|-----------------------|------------------|----------------------------------------------------------|
+| `dir`                   | `ls`           | Get-ChildItem         | gci              | Ordnerinhalt anzeigen (`directory`, `list`)              |
+| `cls`                   | `clear`        | Clear-Host (function) | cls              | Konsole leeren                                           |
+| `del`, `erase`, `rmdir` | `rm`           | Remove-Item           | ri               | Lösche-Befehl (`delete`, `remove`)                       |
+| `copy`                  | `cp`           | Copy-Item             | ci               | Kopieren                                                 |
+| `move`                  | `mv`           | Move-Item             | mi               | Verschieben (`move`)                                     |
+| `rename`                | `mv`           | Rename-Item           | rni              | Umbenennen (unter Linux wird Umbenannt durch Verschieben)|
+| `type`                  | `cat`          | Get-Content           | gc               | Inhalt von (einer) Datei(en) anzeigen (`concatenate`)    |
+| `cd`                    | `cd`           | Set-Location          | sl               | Ort (Ordner) wechseln (`change directory`)[^noteC4]      |
+| `md`                    | `mkdir`        | New-Item              | ni               | Ordner anlegen (`make directory`)[^noteC5]               |
   
 > Auszug aus: [Windows To Unix Command Cheat Sheet](https://gist.github.com/jonlabelle/e8ba94cd29b8f63fd7dd3c4f95c1d210#file-windows_to_unix_command_cheat_sheet-md )
   
