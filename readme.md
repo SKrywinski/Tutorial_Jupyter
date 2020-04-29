@@ -4,8 +4,15 @@
 Vorbemerkungen
 -------
   
-Dieses Tutorial versteht sich als unterstützende Hilfestellung bei der Installation von Jupyter. Es umreißt die notwendigen Vorkehrungen und versucht, die Prozesse nachvollziehbar zu erklären, dass der Einstieg in Jupyter problemlos gelingt.
-Da sich das Tutorial an Anwender - auch ganz ohne Vorkenntnisse -  richtet, ist es nicht sein Ziel, alles en detail zu beleuchten. Für weiterführende Lekture werden, wo sinnvoll, Empfehlungen gegeben. Auch können trotz sorgfältiger Vorbereitung wahrscheinlich nicht alle denkbaren (Fehler)Fälle abgedeckt werden, in denen sich Anwender Unterstützung wünschen - eingesetzte Hard- und Software und  Vorwissen sind einfach zu vielfältig.
+Dieses Tutorial versteht sich als unterstützende Hilfestellung bei der Installation von Jupyter, einer browserbasierten Umgebung zur Pythonprogrammierung. Es umreißt die notwendigen Vorkehrungen und versucht, die Prozesse nachvollziehbar zu erklären, dass der Einstieg in Jupyter problemlos gelingt.
+  
+Da sich das Tutorial an Anwender - auch ganz ohne Vorkenntnisse -  richtet, ist es nicht sein Ziel, alles en detail zu beleuchten.
+  
+Vielmehr wird zur Installation von Juypter relativ viel Information zur Vorbereitung geliefert. So werden Einführungen zur generellen Arbeit im Dateisystem und zum Umgang mit der Kommandozeile einen relativ großen Platz einnehmen.
+Zwar ist die Installation von Jupyter möglich ohne diese Vorkenntnisse, aber schon während der Arbeit mit Jupyter-Notebooks ist es notwendig, mit Pfaden zu arbeiten, wie es im Abschnitt "Ordnerstruktur verstehen" erklärt wird.
+Um Jupyter oder eigene Python-Skripte zu starten bietet es sich oft an, dies aus der Kommandozeile heraus zu tun. Deswegen - aufbauend auf das Wissen um Ordnerstrukturen und Dateisysteme - folgt dann ein Abschnitt, der beim Einstieg in die Arbeit mit der Kommandozeile hilft.
+  
+Für weiterführende Lekture werden, wo sinnvoll, Empfehlungen gegeben. Auch können trotz sorgfältiger Vorbereitung wahrscheinlich nicht alle denkbaren (Fehler)Fälle abgedeckt werden, in denen sich Anwender Unterstützung wünschen - eingesetzte Hard- und Software und  Vorwissen sind einfach zu vielfältig.
 Das Tutorial nährt sich aus Erfahrungen häufiger Probleme vorangegangener Semester und versteht sich auch als weiter im Aufbau befindlich.
   
   
@@ -17,7 +24,7 @@ Das Tutorial nährt sich aus Erfahrungen häufiger Probleme vorangegangener Seme
   
 Ju*py*ter weißt bereits darauf hin, dass mit Python (genauer gesagt in der 3. Version) gearbeitet wird.
 Python gilt als leicht erlernbare Programmiersprache, deren bereits großer Funktionsumfang mit Hilfe von Bibliotheken enorm erweitert werden kann, sodass Python sich nicht nur wachsender Beliebtheit erfreut, sondern auch in allen Bereichen von Data Science und Machine Learning eingesetzt wird.
-Auch wenn Python leicht zu erlernen ist, lernt man programmieren am Besten durch programmieren. Deswegen anbei ein paar hilfreiche Links, die beim (Python) Programmierenlernen helfen.
+Auch wenn Python leicht zu erlernen ist, lernt man programmieren am Besten durch Programmieren. Deswegen anbei ein paar hilfreiche Links, die beim (Python) Programmierenlernen helfen.
   
 Tutorials
 + [W3Schools Python Tutorial](https://www.w3schools.com/python/default.asp )
@@ -32,7 +39,7 @@ Einfache Alltagsprobleme mit Python automatisch lösen:
   
   
   
-Nun folgen zwei kurze Abschnitte, in denen die Arbeit mit Ordnerstrukturen und der Kommandozeile behandelt wird. Auch wenn im Anschluss daran mit dem Softwarepaket Anaconda eine sehr einfache, vollautomatische Lösung zur Installation einer vollständigen Entwicklungsumgebung vorgestellt wird, die eine Menge Konfigurations- und Verwaltungsarbeit erspart, lohnt sich ein Verständnis von Ordnerstrukturen und der Kommandozeile spätestens bei Auftreten von Problemen. Häufig ist eine Arbeit mit der Kommandozeile die einzige Option.
+Nun folgen zwei kurze Abschnitte, in denen die Arbeit mit Ordnerstrukturen und der Kommandozeile behandelt wird. Auch wenn im Anschluss daran mit dem Softwarepaket Anaconda eine sehr einfache, vollautomatische Lösung zur Installation einer vollständigen Entwicklungsumgebung vorgestellt wird, die eine Menge Konfigurations- und Verwaltungsarbeit erspart, ist ein Verständnis von Ordnerstrukturen und der Kommandozeile spätestens bei Auftreten von Problemen unerlässlich. Häufig ist eine Arbeit mit der Kommandozeile die einzige Option.
 Aber schon, wenn es darum geht, später kleine Skripte zu schreiben, die mit Dateien arbeiten, ist dieses Wissen unumgänglich. Die ersten eigenen Programme werden auch in der Kommandozeile laufen und kein anderes Benutzerinterface haben.
   
   
@@ -46,7 +53,7 @@ Es ist notwendig, zu verstehen, wie Pfadangaben zum Beispiel mit graphischen Dat
   
   
   
-<img src="img/WindowsExplorer.png?0.20848327544747858"  width="600px"  alt="Windows Explorer" >
+<img src="img/WindowsExplorer.png?0.5222616582764945"  width="600px"  alt="Windows Explorer" >
   
   
   
@@ -88,7 +95,7 @@ Dabei fällt auf, dass sich in den Pfadangaben von Windows `\` und Linux `/` unt
   
 Möchte man in den übergeordneten Ordner `C:\Users\%USER%\` oder `/home/<username>/` wechseln, gibt man `cd ..`[^noteF2] ein. Durch `cd Dokumente` wechselt man vom übergeordneten Ordner eine Ebene tiefer nach Dokumente. Es ist sehr wichtig, sich das klarzumachen.
   
-[^noteF2]: =change directory
+[^noteF2]: `cd` steht für change directory
   
 ####  Absolute und relative Pfadangaben
   
@@ -131,18 +138,21 @@ Vom Ort `C:\Users\%USER%\Dokumente` oder `/home/<username>/Dokumente` aus gibt e
   
   
   
+Nach dem Überlick über das Arbeit im Dateisystem folgt eine kleine Einführung in den Umgang mit der Kommandozeile. Der Einstieg dürfte nun leicht fallen, da jetzt schon ein Gefühl dafür besteht, wo man gerade im System arbeitet und was die angezeigten Pfade bedeuten.
+  
 ###  Kommandozeile / Terminal
   
-<img src="img/Open_CMD.jpg?0.3585709461782951"  width="600px"  alt="Kommandozeile" >
+  
+<img src="img/Open_CMD.jpg?0.44678802986392263"  width="600px"  alt="Kommandozeile" >
   
 Die Kommandozeile ist eine der ersten Möglichkeiten, mit einem Programm (oder dem Betriebssystem) zu interagieren[^noteC1]. Zwar wirkt der Umgang mit der Kommandozeile oft kompliziert, da dieser im Folgenden aber unumgänglich ist, hier einige kurze einleitende Worte. Man wird schnell merken, das jede Angst der Benutzung unbegründet ist und die Nutzung der Kommandozeile für alltägliche Arbeiten oft der effizienteste Weg.
   
 Die Kommandozeile gibt es auf jedem Betriebssystem und sie funktioniert auch überall ziemlich ähnlich.
 Unter Windows startet man sie durch Drücken von *Windowstaste + R* und der Eingabe von `CMD`.
 Unter Linux benutzt man dafür das *Terminal*, auf einigen Distributionen drückt man *ALT + CTRL + T*.
-Ei weiterer Weg, die Kommandozeile zu öffnen ist, im Dateiexplorer per Rechtsklick ein Kontextmenü zu öffnen und dort * _was genau?_ * (Windows) oder *In Terminal öffnen* (Linux) anzuklicken.
+Ein weiterer Weg, die Kommandozeile zu öffnen ist, im Dateiexplorer per Rechtsklick ein Kontextmenü zu öffnen und dort * _was genau?_ * (Windows) oder *In Terminal öffnen* (Linux) anzuklicken.
 Es öffnet sich ein meist schwarz oder weiß hinterlegtes Fenster. Zu sehen ist ein meist blinkender Cursor. Dort wird die Eingabe erwartet.
-Der Cursor steht hinter einem `>` (Windows) oder einem `$` (Linux). Vor diesen Zeichen, die anzeigen, dass eine Eingabe erwartet wird, ist der aktuelle Pfad, in der sich die Kommandozeile gerade befindet. Standardmäßig öffnet sich diese im entsprechenden Benutzerverzeichnis, `C:\Users\%USER%` (Windows) und `/home/<username>`[^noteC2], wobei dieser Standardpfad in Linux mit `~` abgekürzt ist[^noteC3]. Hat man die Kommandozeile mit der Rechtsklick-Methode geöffnet, steht sie genau an dem Ort des Öffnens im Dateiverzeichnis. So eignet sich diese Methode besonders für unerfahrene Benutzer: Sie bekommen ein Gefühl dafür, das alle Aktionen in der Kommandozeile zuerst immer einen relativen Bezug zur Ordnerstruktur haben.  In diesem Zusammenhang ist es hilfreich, sich noch einmal klarzumachen, was im Abchnitt [Ordnerstruktur](folderstructure.md#Ordnerstruktur ) beschrieben wurde.
+Der Cursor steht hinter einem `>` (Windows) oder einem `$` (Linux). Vor diesen Zeichen, die anzeigen, dass eine Eingabe erwartet wird, ist der aktuelle Pfad, in der sich die Kommandozeile gerade befindet. Standardmäßig öffnet sich diese im entsprechenden Benutzerverzeichnis, `C:\Users\%USER%` (Windows) und `/home/<username>`[^noteC2], wobei dieser Standardpfad in Linux mit `~` abgekürzt ist[^noteC3]. Hat man die Kommandozeile mit der Rechtsklick-Methode geöffnet, steht sie genau an dem Ort des Öffnens im Dateiverzeichnis. So eignet sich diese Methode besonders für unerfahrene Benutzer: Sie bekommen ein Gefühl dafür, das alle Aktionen in der Kommandozeile zuerst immer einen relativen Bezug zur Ordnerstruktur haben.  In diesem Zusammenhang ist es hilfreich, sich noch einmal klarzumachen, was im Abschnitt [Ordnerstruktur](folderstructure.md#Ordnerstruktur ) beschrieben wurde.
 Weiterführende Erklärungen bezüglich verschiedener Benutzer- und Rechteverwaltung werden hier bewusst ausgeklammert.
   
 [^noteC1]: [Erklärung](https://tutorial.djangogirls.org/de/intro_to_command_line/ ) für alle Betriebssysteme
@@ -191,10 +201,11 @@ Jupyter
 ------
   
 Nicht nur im Verlauf dieses Seminars wird die Notwendigkeit bestehen, Code ausführen, Codeschnipsel kombinieren oder Code selber erzeugen zu müssen.
-Vor allem zur schnellen Ausführung von Code und zur Entwicklung bietet es sich an, Jupyter-Notebooks zu verwenden. Damit ist es möglich, Code zeilenweise auszuführen, um zu überprüfen, ob er tut was er soll, ohne auf eine umfangreiche und große Entwicklungsumgebung wie [PyCharm](https://www.jetbrains.com/pycharm/ )[^note1] zurückgreifen zu müssen.[^note2]
+Vor allem zur schnellen Ausführung von Code und zur Entwicklung bietet es sich an, Jupyter-Notebooks zu verwenden. Damit ist es möglich, Code zeilenweise auszuführen, um zu überprüfen, ob er tut was er soll, ohne auf eine umfangreiche und große Entwicklungsumgebung wie [PyCharm](https://www.jetbrains.com/pycharm/ )[^note1] zurückgreifen zu müssen.
+  
+  
   
 [^note1]: PyCharm ist in einer kostenlosen Community- und einer für Studenten auch kostenlosen professionellen Version erhältlich
-[^note2]: Hinweis auf Atom + Hydrogen?
   
 ###  Jupyter ausprobieren
   
@@ -204,7 +215,7 @@ Vor allem zur schnellen Ausführung von Code und zur Entwicklung bietet es sich 
   
 Um zu sehen, wie ein Jupyter-Notebook aussieht, und wie es funktioniert, ohne etwas installieren zu müssen, kann bei [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/ ) ein [Beispielnotebook](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/master?urlpath=lab/tree/demo ) geöffnet und ausprobiert werden.  
   
-Bei [Google Colab](https://colab.research.google.com/ ) können - sofern ein Google-Konto vorhanden ist, Jupyter-Notebooks mit eigenen Daten angelegt, gespeichert und ausgeführt werden. Jedoch: (Später vielleicht) Sensible Daten werden so aus der Hand gegeben; dies gilt es im Hinterkopf zu behalten.
+Bei [Google Colab](https://colab.research.google.com/ ) können - sofern ein Google-Konto vorhanden ist, Jupyter-Notebooks mit eigenen Daten angelegt, gespeichert und ausgeführt werden. Jedoch: Sensible Daten werden auf Google-Servern gespeichert; dies gilt es im Hinterkopf zu behalten.
   
 ####  Anaconda
   
@@ -212,15 +223,13 @@ Zur Installation von Jupyter empfiehlt sich, dies zusammen mit der Anaconda-Dist
   
 [^note4]: https://jupyter.readthedocs.io/en/latest/install.html
   
-Anaconda ist <!--sozusagen--> ein Softwarepaket, dass sich nicht nur um die richtige Installation von Python (und R) kümmert, sondern auch dafür sorgt, dass Abhängigkeiten von (Python-)Paketen richtig aufgelöst werden.
-Das verhindert nicht nur Fehler durch Inkompabilität sondern möglicherweise auch durch Änderungen in den Paketen selbst, die sich mitunter auf Ausgeben von selbstentwickelten Programmen auswirken.
-Dabei und dafür bringt Anaconda die Entwicklungsumgebung Spyder mit und beinhaltet eine umfangreiche Paketsammlung[^note5] für Python, sodass zunächst mit keiner anderen Paketverwaltung gearbeitet werden muss.
+Anaconda ist <!--sozusagen--> ein Softwarepaket, das sich nicht nur um die richtige Installation von Python (und R) kümmert, sondern auch dafür sorgt, dass Abhängigkeiten von (Python-)Paketen richtig aufgelöst werden.
+Das verhindert nicht nur Fehler durch Inkompatibilität sondern auch durch Änderungen in den Paketen selbst, die sich auf die Funktion von selbstentwickelten Programmen auswirken.
+Anaconda bringt weiter die Entwicklungsumgebung Spyder mit und beinhaltet eine umfangreiche Paketsammlung[^note5] für Python, sodass zunächst mit keiner anderen Paketverwaltung gearbeitet werden muss.
 Vom Anaconda Navigator, der "Benutzeroberfläche" von Anaconda aus sind alle Tools wie Jupyter, Spyder, Paketverwaltung aber auch Installation und Update von Paketen erreichbar; so können viele Aufgaben von einem Ort und zunächst ohne [Kommandozeile](commandline.md ) erledigt werden.
   
-  <!--dann:
-  + Warum Anaconda/so ein Riesenpaket?
-  + Spyder
-+ Python 3 != Anaconda 3(?)-->
+  
+  
   
 Bei der Auswahl der richtigen Anaconda-Distribution kommt es auf folgende Punkte an:
 + welches Betriebssystem: Windows - Linux - macOS
@@ -247,13 +256,12 @@ Hier ist der Anknüpfpunkt bei der Installation von Python und Anaconda: In den 
 In der PATH-Variable sind kurz gesagt Pfade abgespeichert, in denen sich Programmdateien befinden. Jedes Programm, das im Betriebssystem installiert ist, hat irgendwo eine ausführbare Datei (bei Windows zum Beispiel `.exe` oder `.bat` ufm.), die aufgerufen wird, wenn das Programm gestartet werden soll. Dabei spielt es keine Rolle, ob auf eine Verknüpfung zum Programm geklickt, es aus dem Startmenü ausgewählt oder per Befehl auf der Kommandozeile aufgerufen wird.
   
   
-<img src="img/Systemvariable_path_windows.png?0.6040329102258022"  width="600px"  alt="Windows Umgebungsvariable" >
+<img src="img/Systemvariable_path_windows.png?0.3743413112353666"  width="600px"  alt="Windows Umgebungsvariable" >
   
   
   
-Ist beispielsweise auf dem Computer LibreOffice als Officepaket installiert und Writer (Word-Äquivalent) soll gestartet werden (durch eine der oben aufgeführte Methoden), dann weiß das Betriebssystem durch die PATH-Variable, wo die ausführbare Datei zu finden ist: `C:\Program Files (x86)\LibreOffice 5\program\swriter.exe` oder `usr/bin/swriter`. Gäbe es die Umgebungsvariable nicht, müsste zum entsprechenden Speicherort der Programmdatei gewechselt werden, um dann *von dort aus* gestartet zu werden. So aber kann man an jeder beliebigen Stelle im Dateisystem (die Verknüpfung kann auf dem Desktop oder irgendwo anders liegen, man kann eine Kommandozeile irgendwo starten) aus das Programm einfach durch Klick oder Eingabe von `swriter.exe` oder `swriter` starten[^note6].
-Es erklärt sich von selbst, dass eine PATH-Variable aus mehreren Pfaden (jeweils ein Eintrag pro Programm) bestehen kann. Es ist eine Variable, innerhalb derer die verschiedenen Pfade durch `;` (Windows) oder durch `:` (Linux) getrennt sind.
-  
+Ist beispielsweise auf dem Computer LibreOffice als Officepaket installiert und Writer (Word-Äquivalent) soll gestartet werden (durch eine der oben aufgeführte Methoden), dann weiß das Betriebssystem durch die PATH-Variable, wo die ausführbare Datei zu finden ist: `C:\Program Files (x86)\LibreOffice 5\program\swriter.exe` oder `usr/bin/swriter`. Gäbe es die Umgebungsvariable nicht, müsste zum entsprechenden Speicherort der Programmdatei gewechselt werden, um dann *von dort aus* gestartet zu werden. So kann man an jeder beliebigen Stelle im Dateisystem das Programm einfach durch Klick oder Eingabe von `swriter.exe` oder `swriter` starten[^note6]. Die Verknüpfung kann auf dem Desktop oder irgendwo anders liegen, man kann eine Kommandozeile irgendwo starten.
+Eine PATH-Variable kann aus mehreren Pfaden (jeweils ein Eintrag pro Programm) bestehen, die durch `;` (Windows) oder `:` (Linux) getrennt sind.
   
 [^note6]: Die Pfade können je nach installierter Version oder Anwendung zwar abweichen, generell finden sich Programmdateien bei Standardinstallation aber in `C:\Program Files\`, `C:\Program Files\` (Windows) oder `/usr/bin` (Linux).
   
@@ -268,9 +276,9 @@ Eine detaillierte Anleitung, wie auf den verschiedenen Betriebssystemen mit der 
   
 ####  Installation
   
-Es ist schon viel geschafft auf dem Weg zu einer lauffähigen Jupyter-Umgebung (auf dem ganz nebenbei viel Wissen eingeflossen ist, das später sowieso gebraucht wird), sicher der größte Teil. Die Installation von Anaconda selbst besteht an sich nur aus der Ausführung des oben bereits heruntergeladenen Installers (Windows) beziehungsweise des heruntergeladenen Bash-Skripts (Linux). Bei Windows ist darauf zu achten, dass Anaconda für *alle Benutzer* installiert wird und die PATH-Variable hinzugefügt wird.
+Das Meiste ist schon geschafft auf dem Weg zu einer lauffähigen Jupyter-Umgebung; ganz nebenbei ist viel Wissen eingeflossen, das später sowieso gebraucht wird. Die Installation von Anaconda selbst besteht an sich nur aus der Ausführung des oben bereits heruntergeladenen Installers (Windows) beziehungsweise des heruntergeladenen Bash-Skripts (Linux). Bei Windows ist darauf zu achten, dass Anaconda für *alle Benutzer* installiert wird und die PATH-Variable hinzugefügt wird.
   
-<img src="img/add_path_variable_win.png?0.0015490944831524356"  width="600px"  alt="PATH-Variable hinzufügen" >
+<img src="img/add_path_variable_win.png?0.5364098703540243"  width="600px"  alt="PATH-Variable hinzufügen" >
   
 Alle weiteren Schritte sollten weitgehend selbsterklärend sein.
 Auch bei Linux ist - bei entsprechender Nachfrage - die PATH-Variable zu setzen[^note7]; den Fragen zu Lizenzvereinbarung und Installationspfad kann (mit `yes`) zugestimmt werden.
@@ -288,14 +296,14 @@ Die umfangreiche Vorbereitungsarbeit, die investiert wurde, mag übertrieben sch
   
   
   
-<img src="img/anaconda_navigator.png?0.3630979076605716"  width="600px"  alt="Anaconda Navigator" >
+<img src="img/anaconda_navigator.png?0.17376649350267415"  width="600px"  alt="Anaconda Navigator" >
   
 Mit Anaconda wurde auch der Anaconda-Navigator installiert. Dies ist die zentrale grafische Benutzeroberfläche für die Verwaltung und das Starten von Programmen. Er wird über den Klick auf das entsprechende Programm-Icon oder über die Eingabe von `anaconda-navigator` in der Kommandozeile gestartet. Von dort aus kann das Jupyter-Notebook einfach per Klick auf *Launch* geöffnet werden.
 Man kann Jupyter aber auch über die Eingabe von `jupyter notebook` direkt aus der Kommandozeile heraus starten.
-Ein neues Notebook wird im (neuen Reiter vom) Standardbrowser. Die Adresse ist `localhost:8888/tree`. Das bedeutet nicht, dass Jupyter irgendetwas online macht, der Browser ist einfach die Oberfläche für das Programm; darauf weist *localhost* hin. Im geöffneten Fenster sind mehrere Ordner zu sehen. Da Anaconda sowohl auf Windows als auch auf Linux im Benutzerordner installiert ist, sind offensichtlich genau die Ordner zu sehen, die eben dort liegen. Auch wenn das im Moment banal erscheint, gilt es doch, Notiz davon zu nehmen.
+Ein neues Notebook wird im (neuen Reiter vom) Standardbrowser geöffnet. Die Adresse ist `localhost:8888/tree`. Das bedeutet nicht, dass Jupyter irgendetwas online macht, der Browser ist einfach die Oberfläche für das Programm; darauf weist *localhost* hin. Im geöffneten Fenster sind mehrere Ordner zu sehen. Da Anaconda sowohl auf Windows als auch auf Linux im Benutzerordner installiert ist, sind offensichtlich genau die Ordner zu sehen, die eben dort liegen. Auch wenn das im Moment banal erscheint, gilt es doch, Notiz davon zu nehmen.
   
   
-<img src="img/jupyter_notebook.png?0.2512031623675184"  width="600px"  alt="Jupyter Notebook" >
+<img src="img/jupyter_notebook.png?0.5383216099398842"  width="600px"  alt="Jupyter Notebook" >
   
 Es bietet sich an, in einen Ordner wie *Dokumente* oder *Documents* zu navigieren und dort einen eigenen Ordner anzulegen, der Jupyter-Notebooks (Dateien mit der Endung `.ipynb`) enthält. Ein neues Jupyter Notebook legt man aus der Browser-Oberfläche heraus an indem man (im Screenshot ganz rechts) auf *New* und dann *Python 3* klickt.
   
@@ -304,11 +312,12 @@ Ein Beispielpfad mit Jupyter-Notebook sieht so aus:
 oder
 `/home/<username>/Documents/python_projects/first_notebook.ipynb`
   
-Wird Jupyter nach einer der oben genannten Methoden gestartet, müsste immer in den entsprechenden Pfad gewechselt werden, in dem die zu bearbeitende Jupyter-Datei liegt; Wesentlich leichter ist es da, entweder per grafischem Dateiverwalter zu entsprechenden Ort zu wechseln und dort - wie oben erklärt - eine Kommandozeile zu starten, oder in der Kommandozeile zu dem Ort zu wechseln, und dann in der Kommandozeile `jupyter notebook` zu starten. Idealerweise startet man im entsprechenden Ort im Beispielfall mit `jupyter notebook first_notebook.ipynb`; im Browser wird direkt das Notebook geöffnet.
+Wird Jupyter nach einer der oben genannten Methoden gestartet, müsste immer in den entsprechenden Pfad gewechselt werden, in dem die zu bearbeitende Jupyter-Datei liegt. Wesentlich leichter ist es da, entweder per grafischem Dateiverwalter zu entsprechendem Ort zu wechseln und dort - wie oben erklärt - eine Kommandozeile zu starten.
+Oder die Kommandozeile wird zuerts gestartet und in dieser wird zum Ort gewechselt. In beiden Fällen wird dann in der Kommandozeile `jupyter notebook` eingegeben, um Jupyter zu starten. Idealerweise nimmt man in den Befehl die Datei selbst mit auf: `jupyter notebook first_notebook.ipynb`; im Browser wird direkt das Notebook geöffnet.
   
   
   
-<img src="img/first_notebook.png?0.5916801426990195"  width="600px"  alt="first_notebook" >
+<img src="img/first_notebook.png?0.13738278131072001"  width="600px"  alt="first_notebook" >
   
 Oben ist ein kleiner Ausschnitt dargestellt, wie ein Notebook aussieht. Hier sei nur ein sehr kurzer Überblick über Jupyter Notebooks gegeben:
 Man vergibt in der obersten Zeile einen Namen, unter dem das Notebook gespeichert wird. Jupyter speichert regelmäßig automatisch, doch kann mittels Klick auf das entsprechende Icon (oder mit *STRG + S*) auch manuell gespeichert werden.
