@@ -159,7 +159,7 @@ Weiterführende Erklärungen bezüglich verschiedener Benutzer- und Rechteverwal
 [^noteC2]:`%USER%` und `<username>` sind natürlich Platzhalter für die jeweiligen Benutzernamen. Vor allem unter Windows findet man immer wieder auch `%APPDATA%`, um auf (versteckte) Benutzerdaten zugreifen zu können. Diese sind standardmäßig versteckt.
 [^noteC3]:Ein Wechsel in das eigene Homeverzeichnis ist unter Linux mit der Eingabe `cd ~` möglich
   
-In der Kommandozeile kann im Dateisystem navigiert werden, Dateien und Ordner können aufgelistet und manipuliert werden (Erstellen, Umbenennen, Löschen, Kopieren, etc.). Alles was in einer grafischen Benutzeroberfläche meist mit der Maus gemacht wird und noch mehr ist hier möglich. Die vielen Befehle wirken sicher zunächst abschreckend, werden aber schon nach weniger Zeit des Umgangs ganz automatisch von der Hand gehen.
+In der Kommandozeile kann im Dateisystem navigiert werden, Dateien und Ordner können aufgelistet und manipuliert werden (Erstellen, Umbenennen, Löschen, Kopieren, etc.). Alles was in einer grafischen Benutzeroberfläche meist mit der Maus gemacht wird und noch mehr ist hier möglich. Die vielen Befehle wirken vielleicht abschreckend, werden aber schon nach weniger Zeit des Umgangs ganz automatisch von der Hand gehen.
   
 Einige der am häufigsten gebrauchten Befehle sind in der Tabelle unten zu finden.
   
