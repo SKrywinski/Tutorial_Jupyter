@@ -359,7 +359,7 @@ Ein Notebook funktioniert, wie dem Screenshot zu entnehmen ist, mit einzelnen Ze
   
 + [Anaconda (Navigator) unter Linux installieren](https://medium.com/@thecraftman/installing-anaconda-navigator-on-linux-ubuntu-18-04-d805d5a0f71a )
   
-+ [Einrichten von Anaconda (TU Harburg)](https://fizban05.rz.tu-harburg.de/itbh-inf-wise201718/veranstaltungsskript-inf-wise201718/material/sitzungsmaterial/einrichtung-byod-python.html )
+<!-- + [Einrichten von Anaconda (TU Harburg)](https://fizban05.rz.tu-harburg.de/itbh-inf-wise201718/veranstaltungsskript-inf-wise201718/material/sitzungsmaterial/einrichtung-byod-python.html ) -->
   
 + [Einführung zu und Benutzung der Kommandozeile](https://tutorial.djangogirls.org/de/intro_to_command_line/ )
   
